@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 .pagebox {
   display: flex;
   height: 200px;
@@ -8,7 +9,6 @@
   border-radius: 10px;
   padding: 20px;
   background-color: orangered;
-
 }
 
 #hlogo {
@@ -103,8 +103,6 @@ textarea {
   max-height: 10%;
   max-width: 15%;
   border: solid salmon 4px;
-
-
 }
 
 .vignette:hover {
@@ -118,4 +116,3 @@ textarea {
   75% {transform: rotate3d(0,1,0,260deg);}
   100% {transform: rotate3d(0,1,0,360deg);}  
 }
-
