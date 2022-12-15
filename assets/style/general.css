@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+.pagebox {
+  display: flex;
+  height: 200px;
+  border: 12mm solid salmon ;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: orangered;
+
+}
+
+#hlogo {
+  position: relative;
+  max-height: 50px;
+  max-width: 200px;
+  animation: Marvel3D 3s forwards;
+}
+
+@keyframes Marvel3D {
+  0% {left: 0%;}
+  25% {left: 65%}
+
+  100% {left: 5%;}
+}
+
+h1 {
+  font-size: 60px;
+  color: red;
+  text-align: center;
+  font-weight: bold;
+}
+
+body {
+  font-size: 25px;
+  padding: 0;
+  margin: 5px;
+  background-color: #b6b2b2;
+}
+
+.corps {
+  margin: 0 auto;
+  min-width: 800px;
+  background-color: white;
+  padding: 10px;
+  min-height: 100vh;
+  /* width: 50%; */
+}
+
+p {
+  margin: 20px 10%;
+  text-align: justify;
+}
+
+h2 {
+  font-size: 45px;
+  color: red;
+  text-align: center;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+.demiPage {
+  background-color: #7cbacf;
+  text-align: left;
+  font-size: smaller;
+  margin: 15px;
+  padding: 15px;
+  box-sizing: content-box;
+  align-self: center;
+  /* min-height: 500px; */
+  width: 40%;
+  border: solid salmon 4px;
+}
+
+.caroussel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: lightblue;
+  border: solid #7cbacf 1px;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.vignette {
+  background-color: #7cbacf;
+  text-align: center;
+  font-size: 15px;
+  margin: 15px;
+  padding: 15px;
+  width: 30%;
+  box-sizing: content-box;
+  max-height: 10%;
+  max-width: 15%;
+  border: solid salmon 4px;
+
+
+}
+
+.vignette:hover {
+  animation: flipv 1s linear;
+}
+
+@keyframes flipv {
+  0% {transform: rotate3d(0,1,0,0deg);}
+  25% {transform: rotate3d(0,1,0,30deg);}
+  50% {transform: rotate3d(0,1,0,120deg);}
+  75% {transform: rotate3d(0,1,0,260deg);}
+  100% {transform: rotate3d(0,1,0,360deg);}  
+}
+
